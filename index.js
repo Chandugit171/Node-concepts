@@ -4,7 +4,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended:false}))
 
 app.use('/api/users',require('./routes/api/users'))
-app.listen(8080,console.log("server running....!"))
+app.listen(8080,console.log("localhost:8080"))
 
 
 // app.listen(3000,(req, res) =>{

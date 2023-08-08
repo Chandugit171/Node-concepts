@@ -25,12 +25,12 @@ router.get('/:id', (req,res) => {
 router.post('/', (req,res) =>{
     const newUser={
         id: uuidv4(),
-        name: req.body.name,
-        email: req.body.email,
-        address: req.body.address
+        trip_id: req.body.name,
+        user_id: req.body.email,
+        driver_id: req.body.address
     }
 
-    if (!newUser.name || !newUser.email ||!newUser.address) {
+    if (!newUser.trip_id || !newUser.user_id ||!newUser.driver_id) {
         return res.sendStatus(400)
     }
     Users.push(newUser)

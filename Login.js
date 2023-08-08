@@ -5,7 +5,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended:false}))
 
 app.use('/api/login',require('./routes/api/login'))
-app.listen(8080,console.log("server running....!"))
+app.listen(8080,console.log("localhost:8080/"))
 import axios from 'axios';
 const handleLogin = (event) => {
   event.preventDefault();
